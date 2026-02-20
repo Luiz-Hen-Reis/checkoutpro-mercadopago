@@ -19,7 +19,8 @@ export async function POST(request: Request) {
     const preference = new Preference(client);
 
     // Define a base URL
-    const baseUrl = "http://localhost:3000";
+    const baseUrl =
+      "https://637f-2804-14d-6892-4648-e879-9fd-74de-c2f.ngrok-free.app";
 
     const result = await preference.create({
       body: {
@@ -37,6 +38,9 @@ export async function POST(request: Request) {
           failure: `${baseUrl}/failure`,
           pending: `${baseUrl}/pending`,
         },
+        auto_return: "approved",
+        notification_url:
+          "https://637f-2804-14d-6892-4648-e879-9fd-74de-c2f.ngrok-free.app/api/webhook/mercadopago",
       },
     });
 

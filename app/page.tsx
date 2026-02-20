@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const product: Product = {
     title: "Produto de Exemplo",
-    price: 2,
+    price: 5,
     quantity: 1,
   };
 
