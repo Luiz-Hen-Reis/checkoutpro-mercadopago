@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
     // Define a base URL
     const baseUrl =
-      "https://dd6b-2804-14d-6892-4648-7196-f929-1e16-5814.ngrok-free.app";
+      "https://ce1d-2804-14d-6892-4648-94b6-a227-5933-393a.ngrok-free.app";
 
     const result = await preference.create({
       body: {
