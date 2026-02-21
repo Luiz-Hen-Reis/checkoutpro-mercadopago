@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
     // Define a base URL
     const baseUrl =
-      "https://637f-2804-14d-6892-4648-e879-9fd-74de-c2f.ngrok-free.app";
+      "https://dd6b-2804-14d-6892-4648-7196-f929-1e16-5814.ngrok-free.app";
 
     const result = await preference.create({
       body: {
@@ -39,8 +39,7 @@ export async function POST(request: Request) {
           pending: `${baseUrl}/pending`,
         },
         auto_return: "approved",
-        notification_url:
-          "https://637f-2804-14d-6892-4648-e879-9fd-74de-c2f.ngrok-free.app/api/webhook/mercadopago",
+        notification_url: `${baseUrl}/api/webhook/mercadopago`,
       },
     });
 
